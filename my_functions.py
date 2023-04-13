@@ -16,4 +16,3 @@ def lower_alpha(arr): #make list of only alpha
         if i.isalpha() == False:
             a.remove(i)
     return a
-
