@@ -21,3 +21,21 @@ def alphaNum(c):
     return (ord("A") <= ord(c) <= ord("Z") or
     ord("a") <= ord(c) <= ord("z") or
     ord("0") <= ord(c) <= ord("9"))
+
+
+def searchInsert(nums, target):
+        left = 0
+        right = len(nums) - 1
+
+        while left <= right:
+            mid =(left+right)//2
+            if target == nums[mid]:
+                return mid
+            elif nums[mid] > target:
+                right = mid-1
+            else:
+                left = mid+1
+                
+        return left
+                
+#print(searchInsert([2,4,6,7,9], 1))
