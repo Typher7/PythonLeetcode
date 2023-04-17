@@ -39,3 +39,11 @@ def searchInsert(nums, target):
         return left
                 
 #print(searchInsert([2,4,6,7,9], 1))
+
+def is_prime(n):
+    for i in range(2, int(n**0.5) + 1):
+        if n%i == 0:
+            return False
+    return True
+            
+print(is_prime(37))
