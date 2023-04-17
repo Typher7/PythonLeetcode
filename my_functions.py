@@ -46,4 +46,12 @@ def is_prime(n):
             return False
     return True
             
-print(is_prime(37))
+#print(is_prime(37))
+
+def duplicate(list):
+    for i in range(len(list)):
+        for j in range(len(list)):
+            if i!=j and list[i]==list[j]:
+                return True
+    return False
+    
