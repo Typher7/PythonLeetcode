@@ -54,4 +54,14 @@ def duplicate(list):
             if i!=j and list[i]==list[j]:
                 return True
     return False
-    
+
+def hashfunct(n):
+    s=0
+    while len(n)>1:
+        for i in n:
+            s+=int(i)
+        n=str(s)
+        s=0
+    return int(n)
+
+print(hashfunct(str(9935627547462643548638548636746249)))
