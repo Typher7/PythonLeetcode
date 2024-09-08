@@ -8,10 +8,3 @@ def reverse_list(arr): #reverse a list using two pointers
         right -= 1
 
     return arr
-
-
-    
-
-    
-
-
