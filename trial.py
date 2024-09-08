@@ -6,4 +6,3 @@ def ispal(string):
     p2 = rev(p)
 
     return p1 == p2
-
