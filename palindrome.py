@@ -26,4 +26,3 @@ class Palindrome:
             right -= 1
 
         return arr
-    
